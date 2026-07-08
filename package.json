@@ -5,7 +5,7 @@
   "type": "module",
   "main": "src/index.js",
   "bin": {
-    "todo-radar": "./bin/todo-radar.js"
+    "todo-radar": "bin/todo-radar.js"
   },
   "files": [
     "bin",
