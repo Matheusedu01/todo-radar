@@ -4,11 +4,7 @@
 
 CLI que varre seu código em busca de comentários `TODO`, `FIXME`, `HACK` e `NOTE`, e gera um relatório — no terminal, em Markdown ou em JSON.
 
-<!--
-TODO (não relacionado ao projeto, é um lembrete meu): gravar um GIF de demo
-aqui usando `vhs` ou `terminalizer` e colar o link abaixo.
 ![demo](./demo.gif)
--->
 
 ## Por que
 
