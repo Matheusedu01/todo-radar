@@ -1,0 +1,34 @@
+{
+  "name": "todo-radar",
+  "version": "0.1.0",
+  "description": "Scans your codebase for TODO/FIXME/HACK comments and generates a report from the terminal.",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "todo-radar": "./bin/todo-radar.js"
+  },
+  "files": [
+    "bin",
+    "src"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "keywords": [
+    "cli",
+    "todo",
+    "fixme",
+    "code-quality",
+    "developer-tools"
+  ],
+  "author": "Matheus Eduardo",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^15.0.0",
+    "globby": "^16.2.1",
+    "picocolors": "^1.1.1"
+  }
+}
