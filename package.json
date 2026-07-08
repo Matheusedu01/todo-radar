@@ -11,6 +11,14 @@
     "bin",
     "src"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Matheusedu01/todo-radar.git"
+  },
+  "homepage": "https://github.com/Matheusedu01/todo-radar#readme",
+  "bugs": {
+    "url": "https://github.com/Matheusedu01/todo-radar/issues"
+  },
   "engines": {
     "node": ">=18"
   },
