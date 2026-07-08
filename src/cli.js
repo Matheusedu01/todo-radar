@@ -1,4 +1,5 @@
 import { Command } from 'commander';
+import { readFileSync } from 'node:fs';
 import { writeFile } from 'node:fs/promises';
 import { scanDirectory, DEFAULT_TAGS } from './scanner.js';
 import { formatAsTable, formatAsMarkdown, formatAsJson } from './formatters.js';
@@ -9,13 +10,15 @@ const FORMATTERS = {
   json: formatAsJson,
 };
 
+const { version } = JSON.parse(readFileSync(new URL('../package.json', import.meta.url), 'utf8'));
+
 export async function run(argv) {
   const program = new Command();
 
   program
     .name('todo-radar')
     .description('Escaneia seu código em busca de comentários TODO/FIXME/HACK/NOTE')
-    .version('0.1.0')
+    .version(version)
     .argument('[path]', 'diretório para escanear', '.')
     .option('-t, --tags <tags>', 'tags a procurar, separadas por vírgula', DEFAULT_TAGS.join(','))
     .option('-f, --format <format>', 'formato de saída: table, markdown ou json', 'table')

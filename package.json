@@ -1,6 +1,6 @@
 {
   "name": "todo-radar",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Scans your codebase for TODO/FIXME/HACK comments and generates a report from the terminal.",
   "type": "module",
   "main": "src/index.js",
