@@ -1,5 +1,7 @@
 # todo-radar
 
+[![CI](https://github.com/Matheusedu01/todo-radar/actions/workflows/ci.yml/badge.svg)](https://github.com/Matheusedu01/todo-radar/actions/workflows/ci.yml)
+
 CLI que varre seu código em busca de comentários `TODO`, `FIXME`, `HACK` e `NOTE`, e gera um relatório — no terminal, em Markdown ou em JSON.
 
 <!--
@@ -66,7 +68,7 @@ O scanner varre os arquivos do projeto (respeitando automaticamente o `.gitignor
 ## Desenvolvimento
 
 ```bash
-git clone https://github.com/<seu-usuario>/todo-radar.git
+git clone https://github.com/Matheusedu01/todo-radar.git
 cd todo-radar
 npm install
 npm test
